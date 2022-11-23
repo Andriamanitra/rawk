@@ -14,13 +14,13 @@ This is a simple wrapper around Ruby's `eval()` that adds some of the convenient
 ### Field separator, number of records, number of fields
 `awk -F';' '{ print NR,$NF }' file.csv`
 
-=> `rawk file.csv -F';' 'P NR,A[NF-1]'`
+=> `rawk -F';' file.csv 'P NR,A[NF-1]'`
 
 
 ### Filtering
 `awk '/WARNING/{print $0}'`
 
-=> `rawk - 'puts A0 if A0 =~ /WARNING/'`
+=> `rawk - 'P A0 if A0 =~ /WARNING/'`
 
 
 ### END
