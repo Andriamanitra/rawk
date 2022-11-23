@@ -99,7 +99,7 @@ class EvalCtx
       field_number = $2.to_i
       return nil if field_number > @fields.length
 
-      field_value = @fields[field_number]
+      field_value = @fields[field_number - 1]
       case $1
       in 'A' then return field_value
       in 'N' then return field_value.to_i
