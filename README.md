@@ -3,6 +3,12 @@
 This is a simple wrapper around Ruby's `eval()` that adds some of the convenient features from AWK, such as auto-initializing variables for each line.
 
 
+## Installation
+
+1. Make sure you have Ruby (>=3.0) installed
+2. Place rawk somewhere in your $PATH, for example `mv /path/to/rawk/rawk.rb $HOME/.local/bin/rawk`
+
+
 ## Examples
 
 ### Basic usage
